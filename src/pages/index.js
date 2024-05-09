@@ -30,45 +30,47 @@ const Home = ({ featuredPost, posts, snippets, categories, error }) => {
 };
 
 export async function getStaticProps() {
+  const GET_DATA = gql`
+  query HomePage {
+    posts(orderBy: createdAt_DESC, first: 3) {
+      featuredImage
+      customPublicationDate
+      excerpt
+      publishedAt
+      slug
+      sponsored
+      tags
+      title
+      content
+    }
+    snippets(orderBy: createdAt_DESC, first: 4) {
+      id
+      title
+      slug
+    }
+    categories(first: 4) {
+      id
+      name
+      slug
+    }
+  }
+  `;
   const { data, error } = await client.query({
-    query: gql`
-      query HomePage {
-        posts(orderBy: createdAt_DESC, first: 3) {
-          featuredImage
-          customPublicationDate
-          excerpt
-          publishedAt
-          slug
-          sponsored
-          tags
-          title
-          content
-        }
-        snippets(orderBy: createdAt_DESC, first: 4) {
-          id
-          title
-          slug
-        }
-        categories(first: 4) {
-          id
-          name
-          slug
-        }
-      }
-    `
+    query: GET_DATA
   });
 
-  const featuredPost = await client.query({
-    query: gql`
-      query FeaturedPost {
-        posts(first: 1, where: { featuredPost: true }) {
-          slug
-          title
-          featuredImage
-        }
-      }
-    `
-  });
+  // const featuredPost = await client.query({
+  //   query: gql`
+  //     query FeaturedPost {
+  //       posts(first: 1, where: { featuredPost: true }) {
+  //         slug
+  //         title
+  //         featuredImage
+  //       }
+  //     }
+  //   `
+  // });
+  const featuredPost = {}
 
   return {
     props: {
