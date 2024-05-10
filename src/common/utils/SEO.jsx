@@ -145,7 +145,7 @@ const Meta = ({
       <link rel={'canonical'} href={canonical} />
       <link
         rel={'alternate'}
-        href={'https://blog.itsrakesh.com'}
+        href={'https://blog-viewer-yz4l.vercel.app'}
         hrefLang={'x-default'}
       />
 

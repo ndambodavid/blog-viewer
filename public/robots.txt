@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://blog.itsrakesh.com/site-map
+Sitemap: https://blog-viewer-vercel-yz4l.app/site-map

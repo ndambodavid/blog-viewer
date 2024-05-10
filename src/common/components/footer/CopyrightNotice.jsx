@@ -25,7 +25,7 @@ const CopyrightNotice = () => {
         <Text>v{siteConfig.siteVersion}</Text>
       </Flex>
       <Center>
-        <Text title={'Built with Love and NextJs by Rakesh'}>
+        <Text title={'Built with Love and NextJs by ndambodev'}>
           &lt;/&gt; with 💖 &amp;{' '}
           <Avatar
             size={'xs'}
@@ -35,8 +35,8 @@ const CopyrightNotice = () => {
             }
           />{' '}
           by{' '}
-          <Link href={'https://itsrakesh.com'} isExternal>
-            Rakesh
+          <Link href={'https://github.com/ndambodavid'} isExternal>
+            ndambodev
           </Link>
         </Text>
       </Center>

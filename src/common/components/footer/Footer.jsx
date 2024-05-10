@@ -24,7 +24,7 @@ const Footer = () => {
       <Box id={'footer'} p={{ base: 10, md: 20 }} bg={'black'} color={'white'}>
         <SimpleGrid columns={{ base: 1, md: 3 }}>
           <VStack>
-            <Heading fontFamily={'Poppins'}>itsrakesh</Heading>
+            <Heading fontFamily={'Poppins'}>ndambodev</Heading>
             <HStack spacing={2}>
               <Link href={siteConfig.urls.socials.twitter} isExternal>
                 <IconButton
