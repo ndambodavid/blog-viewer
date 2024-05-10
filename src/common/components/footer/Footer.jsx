@@ -25,7 +25,7 @@ const Footer = () => {
         <SimpleGrid columns={{ base: 1, md: 3 }}>
           <VStack>
             <Heading fontFamily={'Poppins'}>ndambodev</Heading>
-            <HStack spacing={2}>
+            {/* <HStack spacing={2}>
               <Link href={siteConfig.urls.socials.twitter} isExternal>
                 <IconButton
                   aria-label="twitter"
@@ -66,7 +66,7 @@ const Footer = () => {
                   icon={<Icon as={ShowwcaseIcon} w={6} h={6} />}
                 />
               </Link>
-            </HStack>
+            </HStack> */}
           </VStack>
 
           <Spacer />
