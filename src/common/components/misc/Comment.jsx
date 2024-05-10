@@ -21,6 +21,7 @@ const CommentBox = () => {
           lang="en"
           loading="lazy"
           crossorigin="anonymous"
+          
         />
       </Box>
     </Container>
