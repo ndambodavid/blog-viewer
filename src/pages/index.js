@@ -9,8 +9,8 @@ import Footer from '@/components/footer/Footer';
 const Home = ({ featuredPost, posts, snippets, categories, error }) => {
   return (
     <>
-      {/* <SEO /> */}
-      {/* <Analytics /> */}
+      <SEO />
+      <Analytics />
 
       <Navbar />
 
