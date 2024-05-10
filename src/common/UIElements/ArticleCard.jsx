@@ -33,9 +33,10 @@ const ArticleCard = ({ post }) => {
       <NextLink href={`/${post.slug}`} passHref>
         <Link tabIndex={-1}>
           <Image
-            src={buildImage(post.featuredImage.public_id)
-              .resize(Resize.scale().width(1600).height(840))
-              .toURL()}
+            // src={buildImage(post.featuredImage.public_id)
+            //   .resize(Resize.scale().width(1600).height(840))
+            //   .toURL()}
+            src='/hero.png'
             alt={post.title}
             htmlWidth={'100%'}
             htmlHeight={'auto'}

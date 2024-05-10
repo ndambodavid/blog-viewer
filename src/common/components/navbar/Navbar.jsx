@@ -82,7 +82,8 @@ const Navbar = () => {
           <NextLink href={'/'} passHref>
             <Link tabIndex={-1}>
               <Image
-                src={siteConfig.branding.logo}
+              // siteConfig.branding.logo
+                src="/dhanalogo.png"
                 alt={'ndambodev blog logo'}
                 htmlWidth={50}
                 htmlHeight={50}

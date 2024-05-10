@@ -9,8 +9,8 @@ import Footer from '@/components/footer/Footer';
 const Home = ({ featuredPost, posts, snippets, categories, error }) => {
   return (
     <>
-      <SEO />
-      <Analytics />
+      {/* <SEO /> */}
+      {/* <Analytics /> */}
 
       <Navbar />
 
@@ -78,7 +78,7 @@ export async function getStaticProps() {
       posts: data?.posts,
       snippets: data?.snippets,
       categories: data?.categories,
-      // featuredPost: featuredPost?.data?.posts[0],
+      featuredPost: featuredPost?.data?.posts[0],
       error: error ? error.message : null
     },
     revalidate: 300
