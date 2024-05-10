@@ -59,25 +59,26 @@ export async function getStaticProps() {
     query: GET_DATA
   });
 
-  // const featuredPost = await client.query({
-  //   query: gql`
-  //     query FeaturedPost {
-  //       posts(first: 1, where: { featuredPost: true }) {
-  //         slug
-  //         title
-  //         featuredImage
-  //       }
-  //     }
-  //   `
-  // });
-  const featuredPost = {}
+  const GET_FEATURED = gql`
+    query FeaturedPost {
+        posts(first: 1, where: { featuredPost: true }) {
+          slug
+          title
+          featuredImage
+        }
+      }
+  `;
+  const featuredPost = await client.query({
+    query: GET_FEATURED
+  });
+  // const featuredPost = {}
 
   return {
     props: {
       posts: data?.posts,
       snippets: data?.snippets,
       categories: data?.categories,
-      featuredPost: featuredPost?.data?.posts[0],
+      // featuredPost: featuredPost?.data?.posts[0],
       error: error ? error.message : null
     },
     revalidate: 300
