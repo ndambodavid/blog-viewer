@@ -1,13 +1,12 @@
 import { useRouter } from 'next/router';
 import { gql } from '@apollo/client';
-
-import { Analytics, client, SEO } from '@/utils/index.js';
-import { BreadcrumbSchemaMarkup } from '@/schemaMarkup/index.js';
+import { Analytics, client, SEO } from '@/common/utils';
+import { BreadcrumbSchemaMarkup } from '@/common/utils/schemaMarkup';
 import siteConfig from '../../config/site.config';
-import Navbar from '@/components/navbar/Navbar';
-import ExternalArticlesPage from '@/externalArticles/ExternalArticlesPage';
-import { Newsletter } from '@/components/misc';
-import Footer from '@/components/footer/Footer';
+import Navbar from '@/common/components/navbar/Navbar';
+import ExternalArticlesPage from '@/components/externalArticles/ExternalArticlesPage';
+import { Newsletter } from '@/common/components/misc';
+import Footer from '@/common/components/footer/Footer';
 
 const ExternalArticles = ({ articles }) => {
   const router = useRouter();

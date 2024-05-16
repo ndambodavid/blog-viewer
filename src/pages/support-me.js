@@ -1,12 +1,11 @@
 import { useRouter } from 'next/router';
-
-import { Analytics, SEO } from '@/utils/index.js';
-import { BreadcrumbSchemaMarkup } from '@/schemaMarkup/index.js';
+import { Analytics, SEO } from '@/common/utils';
+import { BreadcrumbSchemaMarkup } from '@/common/utils/schemaMarkup';
 import siteConfig from '../../config/site.config';
-import Navbar from '@/components/navbar/Navbar';
-import SupportMePage from '@/supportMe/SupportMePage';
-import { Newsletter } from '@/components/misc';
-import Footer from '@/components/footer/Footer';
+import Navbar from '@/common/components/navbar/Navbar';
+import SupportMePage from '@/components/supportMe/SupportMePage';
+import { Newsletter } from '@/common/components/misc';
+import Footer from '@/common/components/footer/Footer';
 
 const SupportMe = () => {
   const router = useRouter();

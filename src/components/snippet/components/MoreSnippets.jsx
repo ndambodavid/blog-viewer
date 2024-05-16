@@ -1,8 +1,9 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
 
-import { SnippetCard } from '@/UIElements/index.js';
-// import { AdSense } from 'common/utils';
-// import siteConfig from '../../../../config/site.config';
+import { SnippetCard } from '@/common/UIElements';
+import { AdSense } from '@/common/utils';
+import siteConfig from '../../../../config/site.config';
+import { Box } from '@chakra-ui/react';
 
 const MoreSnippets = ({ snippets, loading }) => {
   return (
@@ -15,14 +16,14 @@ const MoreSnippets = ({ snippets, loading }) => {
           ))}
         </SimpleGrid>
       </Container>
-      {/* <Box my={20} mx={'auto'}>
+      <Box my={20} mx={'auto'}>
         <AdSense
           style={{ display: 'block' }}
           adFormat={'fluid'}
           adSlot={siteConfig.adsense.slots.inFeed}
           data-ad-layout-key={'-f9+52+6z-e1+5b'}
         />
-      </Box> */}
+      </Box>
     </>
   );
 };

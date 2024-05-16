@@ -14,9 +14,8 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
 import { Resize } from '@cloudinary/url-gen/actions';
-
-import { CategoryCard } from '@/UIElements/index.js';
-import { buildImage } from '@/utils/index.js';
+import { CategoryCard } from '@/common/UIElements';
+import { buildImage } from '@/common/utils';
 
 const Hero = ({ featuredPost, categories }) => {
   return (

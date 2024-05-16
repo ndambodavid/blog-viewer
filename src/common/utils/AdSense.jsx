@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-
 import siteConfig from '../../../config/site.config';
 
 const AdSense = ({ adFormat, adSlot, ...props }) => {

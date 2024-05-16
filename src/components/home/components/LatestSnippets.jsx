@@ -1,8 +1,7 @@
 import { Box, Button, Center, Heading, Link, Wrap } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
-
-import { SnippetCard } from '@/UIElements/index.js';
+import { SnippetCard } from '@/common/UIElements';
 
 const LatestSnippets = ({ snippets }) => {
   return (

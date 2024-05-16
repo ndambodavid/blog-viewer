@@ -93,21 +93,21 @@ const siteConfig = {
   },
   urls: {
     socials: {
-      twitter: 'https://twitter.com/rakesh_at_tweet',
-      linkedin: 'https://www.linkedin.com/in/itsrakesh',
-      github: 'https://github.com/RakeshPotnuru',
-      showwcase: 'https://www.showwcase.com/itsrakesh'
+      twitter: 'https://twitter.com/',
+      linkedin: 'https://www.linkedin.com/',
+      github: 'https://github.com/ndambodavid',
+      showwcase: 'https://www.showwcase.com/'
     },
-    about: 'https://itsrakesh.com/about',
-    status: 'https://status.itsrakesh.com',
-    newsletter: 'https://newsletter.itsrakesh.com',
-    kofi: 'https://ko-fi.com/itsrakesh'
+    about: '/',
+    status: '/',
+    newsletter: '/',
+    kofi: 'https://ko-fi.com/ndambodavid'
   },
   adsense: {
-    publisherId: 'pub-5607528168839545',
+    publisherId: 'pub-9494755268855790',
     slots: {
-      pageTop: '6183806725',
-      inFeed: '3408517885'
+      pageTop: '7804277631',
+      inFeed: '6540632589'
     }
   },
   yandex: {

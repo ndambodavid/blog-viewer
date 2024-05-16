@@ -1,8 +1,7 @@
 import { Center } from '@chakra-ui/react';
-
-import { ErrorBox } from '@/UIElements/index.js';
+import { ErrorBox } from '@/common/UIElements';
 import { Snippet, MoreSnippets } from './components';
-import { Comment } from '@/components/misc';
+import { Comment } from '@/common/components/misc';
 
 const SnippetPage = ({ snippet, snippets, error }) => {
   return (

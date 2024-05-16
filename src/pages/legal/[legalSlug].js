@@ -1,13 +1,12 @@
 import { Box, Container } from '@chakra-ui/react';
 import { promises as fs } from 'fs';
 import path from 'path';
-
-import { Analytics, SEO } from '@/utils/index.js';
-import { BreadcrumbSchemaMarkup } from '@/schemaMarkup/index.js';
-import { MarkdownRenderer } from '@/UIElements/markdownRenderer';
+import { Analytics, SEO } from '@/common/utils';
+import { BreadcrumbSchemaMarkup } from '@/common/utils/schemaMarkup';
+import { MarkdownRenderer } from '@/common/UIElements/markdownRenderer';
 import siteConfig from '../../../config/site.config';
-import Navbar from '@/components/navbar/Navbar';
-import Footer from '@/components/footer/Footer';
+import Navbar from '@/common/components/navbar/Navbar';
+import Footer from '@/common/components/footer/Footer';
 
 const Legal = ({ data, legalSlug }) => {
   let title, description, image;

@@ -8,8 +8,7 @@ import {
 } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
-
-import { ArticleCard } from '@/UIElements/index.js';
+import { ArticleCard } from '@/common/UIElements';
 
 const LatestArticles = ({ posts }) => {
   return (

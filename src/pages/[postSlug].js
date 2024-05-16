@@ -1,14 +1,11 @@
 import { gql } from '@apollo/client';
 
-import { Analytics, SEO, client } from '@/utils/index.js';
-import {
-  BreadcrumbSchemaMarkup,
-  ArticleSchemaMarkup
-} from '@/schemaMarkup/index.js';
-import Navbar from '@/components/navbar/Navbar';
-import PostPage from '@/post/PostPage';
-import { Newsletter } from '@/components/misc';
-import Footer from '@/components/footer/Footer';
+import { Analytics, SEO, client } from '@/common/utils';
+import { BreadcrumbSchemaMarkup, ArticleSchemaMarkup } from '@/common/utils/schemaMarkup';
+import Navbar from '@/common/components/navbar/Navbar';
+import PostPage from '@/components/post/PostPage';
+import { Newsletter } from '@/common/components/misc';
+import Footer from '@/common/components/footer/Footer';
 
 const PostHome = ({ post, posts, error }) => {
   return (

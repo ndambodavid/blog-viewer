@@ -27,12 +27,12 @@ import Script from 'next/script';
 import Moment from 'react-moment';
 import readingTime from 'reading-time';
 import { Resize } from '@cloudinary/url-gen/actions';
-
-import { CircleIcon } from '@/icons/index.js';
-import { MarkdownRenderer } from '@/UIElements/markdownRenderer';
-import { SocialShareLinks } from '@/UIElements/index.js';
-import { buildImage } from '@/utils/index.js';
-// import siteConfig from '../../../../config/site.config';
+import { CircleIcon } from '@/assets/icons';
+import { MarkdownRenderer } from '@/common/UIElements/markdownRenderer';
+import { SocialShareLinks } from '@/common/UIElements';
+import { buildImage } from '@/common/utils';
+import siteConfig from '../../../../config/site.config';
+import { AdSense } from '@/common/utils';
 
 const Post = ({ post }) => {
   const [height, setHeight] = useState(0);
@@ -75,12 +75,12 @@ const Post = ({ post }) => {
   return (
     <>
       {/* Adsense Page top Ad */}
-      {/* <Box my={10}>
+      <Box my={10}>
         <AdSense
           style={{ display: 'inline-block', width: '100%', height: '90px' }}
           adSlot={siteConfig.adsense.slots.pageTop}
         />
-      </Box> */}
+      </Box>
 
       {/* Breadcrumb */}
       <HStack mt={8} ml={6}>

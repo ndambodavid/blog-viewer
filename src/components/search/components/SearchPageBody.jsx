@@ -14,12 +14,11 @@ import {
 import { useRouter } from 'next/router';
 
 import {
-  ArticleCard,
-  CategoryCard,
+  ArticleCard, CategoryCard,
   ErrorBox,
   SnippetCard,
   TagCard
-} from '@/UIElements/index.js';
+} from '@/common/UIElements';
 
 const changeRoute = (tabIndex, router, query) => {
   switch (tabIndex) {
@@ -28,8 +27,8 @@ const changeRoute = (tabIndex, router, query) => {
         query.c
           ? `/articles?c=${query.c}`
           : query.t
-          ? `/articles?t=${query.t}`
-          : '/articles'
+            ? `/articles?t=${query.t}`
+            : '/articles'
       );
     case 1:
       return router.push('/snippets');

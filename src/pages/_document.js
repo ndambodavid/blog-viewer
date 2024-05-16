@@ -5,15 +5,15 @@ export default function Document() {
     <Html lang={'en'} dir={'ltr'}>
       <Head>
         {/* Google AdSense */}
-        {/* <script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        /> */}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
             (adsbygoogle = window.adsbygoogle || []).push({
-              google_ad_client: "ca-pub-5607528168839545",
+              google_ad_client: "ca-pub-9494755268855790",
               enable_page_level_ads: true
             });
             `

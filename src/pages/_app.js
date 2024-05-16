@@ -1,7 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import { ApolloProvider } from '@apollo/client';
-
-import { client } from '@/utils/index.js';
+import { client } from '@/common/utils';
 import theme from '../theme';
 import '../styles/globals.css';
 import Fonts from '../theme/Fonts';
